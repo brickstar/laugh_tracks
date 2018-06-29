@@ -12,4 +12,15 @@ RSpec.describe Comedian do
       end
     end
   end
+  describe 'Classs Methods' do
+    describe 'Comedian.average_age' do
+      it 'should return average age for all comedians' do
+        iliza = Comedian.create(name: "Iliza Shlesinger", age: 25)
+        hannibal = Comedian.create(name: "Hannibal Buress", age: 35)
+        mike = Comedian.create(name: "Mike Birbiglia", age: 30)
+
+        expect(Comedian.average_age).to eq(30)
+      end
+    end
+  end
 end
