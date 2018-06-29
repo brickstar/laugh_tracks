@@ -1,9 +1,10 @@
 <h1>All Comedians</h1>
 <% @comedians.each do |comedian| %>
 <ul>
-  <li><%= comedian.name%></li>
-  <li><%= comedian.age%></li>
+  <h2><%= comedian.name%></h2>
+  <li>Age: <%= comedian.age%></li>
   <li id='specials-count-<%= comedian.id %>'>Number of Specials: <%= comedian.specials.length %></li>
+  <h3>Specials</h3>
   <% comedian.specials.each do |special| %>
   <li><%= special.name %></li>
   <% end %>
