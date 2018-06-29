@@ -12,7 +12,7 @@ RSpec.describe Comedian do
       end
     end
   end
-  describe 'Classs Methods' do
+  describe 'Class Methods' do
     describe 'Comedian.average_age' do
       it 'should return average age for all comedians' do
         iliza = Comedian.create(name: "Iliza Shlesinger", age: 25)
