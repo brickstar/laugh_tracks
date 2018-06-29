@@ -3,6 +3,7 @@
 <ul>
   <li><%= comedian.name%></li>
   <li><%= comedian.age%></li>
+  <li id='specials-count-<%= comedian.id %>'>Number of Specials: <%= comedian.specials.length %></li>
   <% comedian.specials.each do |special| %>
   <li><%= special.name %></li>
   <% end %>

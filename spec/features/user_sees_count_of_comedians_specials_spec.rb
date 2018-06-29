@@ -21,15 +21,15 @@ describe 'User' do
 
       visit '/comedians'
 
-      within("#specials-count-#{iliza.name}") do
+      within("#specials-count-#{iliza.id}") do
         expect(page).to have_content(3)
       end
 
-      within("#specials-count-#{hannibal.name}") do
+      within("#specials-count-#{hannibal.id}") do
         expect(page).to have_content(5)
       end
 
-      within("#specials-count-#{mike.name}") do
+      within("#specials-count-#{mike.id}") do
         expect(page).to have_content(2)
       end
     end
