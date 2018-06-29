@@ -8,10 +8,9 @@ describe 'User' do
 
       visit '/comedians'
 
-      # within('#average-age') do
-      #   expect(page).to have_content(25)
-      # end
-      expect(page).to have_content(25)
+      within('#average-age') do
+        expect(page).to have_content(25)
+      end
     end
   end
 end
